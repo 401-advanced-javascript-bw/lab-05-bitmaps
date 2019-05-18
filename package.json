@@ -1,0 +1,28 @@
+{
+  "name": "node-apps",
+  "version": "1.0.0",
+  "description": "For this assignment you will be building a bitmap (`.bmp`) transformer CLI. It will read a bitmap in from disk, run one or more color or raster transforms and then write it out to a new file.",
+  "main": "promises.test.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-bw/lab-05-bitmaps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-bw/lab-05-bitmaps/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-bw/lab-05-bitmaps#readme"
+}
