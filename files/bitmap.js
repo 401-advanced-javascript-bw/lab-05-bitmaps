@@ -1,5 +1,5 @@
-const fs = require('fs');
-const transformGreyscale = require('./transforms/greyscale.js');
+const unibrow = require('./transforms/unibrow.js');
+const changeColor = require('./transforms/changeColor.js');
 
 /**
  * Bitmap -- receives a file name, used in the transformer to note the new buffer
@@ -13,7 +13,7 @@ function Bitmap(filePath) {
 const FILE_SIZE_OFFSET = 2;
 const WIDTH_OFFSET = 18;
 const HEIGHT_OFFSET = 22;
-const BYTES_PER_PIXEL_OFFSET = 28;
+const BYTES_PER_PIXEL_OFFSET = 2;
 
 /**
  * Parser -- accepts a buffer and will parse through it, according to the specification, creating object properties for each segment of the file
@@ -43,7 +43,8 @@ Bitmap.prototype.transform = function(operation) {
  * Each property represents a transformation that someone could enter on the command line and then a function that would be called on the bitmap to do this job
  */
 const transforms = {
-  greyscale: transformGreyscale
+  unibrow: unibrow,
+  changeColor: changeColor
 };
 
 module.exports = Bitmap;
